@@ -27,17 +27,5 @@ BOOL CTestDlg::OnInitDialog()
 {
 	CDialogEx::OnInitDialog();
 
-	SetTimer(100, 2000, NULL);
-	SetTimer(100, 5000, NULL);
-
 	return TRUE;
-}
-
-
-void CTestDlg::OnTimer(UINT_PTR nIDEvent)
-{
-	if (nIDEvent == 100)
-	{
-		AfxMessageBox(L"hihi");
-	}
 }

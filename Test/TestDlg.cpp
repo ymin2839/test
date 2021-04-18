@@ -20,12 +20,13 @@ void CTestDlg::DoDataExchange(CDataExchange* pDX)
 }
 
 BEGIN_MESSAGE_MAP(CTestDlg, CDialogEx)
-	ON_WM_TIMER()
 END_MESSAGE_MAP()
 
 BOOL CTestDlg::OnInitDialog()
 {
 	CDialogEx::OnInitDialog();
+
+	AfxMessageBox(L"메시지 작업");
 
 	return TRUE;
 }
